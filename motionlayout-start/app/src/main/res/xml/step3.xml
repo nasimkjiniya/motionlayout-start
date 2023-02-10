@@ -26,8 +26,18 @@
                 app:targetId="@id/moon"
                 app:clickAction="toggle"
         />
-
+        <!-- xml/step3.xml -->
         <!-- TODO: Add KeyFrameSet and KeyPosition -->
+        <!-- to modify default transition path-->
+        <KeyFrameSet>
+            <KeyPosition
+                app:framePosition="50"
+                app:motionTarget="@id/moon"
+                app:keyPositionType="parentRelative"
+                app:percentY="0.5"
+                />
+        </KeyFrameSet>
+
     </Transition>
 
     <!-- Constraints to apply at the start of the animation -->
